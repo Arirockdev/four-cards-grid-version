@@ -1,0 +1,167 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+img {
+  width: 40px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  background: hsl(0, 0%, 98%);
+  
+}
+
+.card {
+  background: hsl(0, 0%, 100%);
+  max-width: 250px;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  box-shadow: 0px 10px 20px 2px hsl(213, 33%, 89%);
+}
+.card.card h3 {
+  font-size: 1.5rem;
+  color: hsl(234, 12%, 34%);
+}
+.card.card p {
+  font-size: 1rem;
+  color: hsl(229, 6%, 66%);
+  margin-top: 1rem;
+}
+
+.card__img {
+  margin-top: 2.5rem;
+  text-align: end;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+header .header__title {
+  margin-top: 1rem;
+  font-size: 2.5rem;
+  font-weight: 200;
+  color: hsl(234, 12%, 34%);
+}
+header .header__subtitle {
+  margin-top: 1rem;
+  font-size: 2.7rem;
+  font-weight: 600;
+  color: hsl(234, 12%, 34%);
+}
+header p {
+  margin-top: 1rem;
+  width: 65%;
+  font-size: 1.1rem;
+  color: hsl(229, 6%, 66%);
+  text-align: center;
+  padding: 1rem;
+}
+
+.card__container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  gap: 2rem;
+}
+
+.card__center {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.card__cyan {
+  border-top: 4px solid hsl(180, 62%, 55%);
+}
+
+.card__red {
+  border-top: 4px solid hsl(0, 78%, 62%);
+}
+
+.card__yellow {
+  border-top: 4px solid hsl(34, 97%, 64%);
+}
+
+.card__blue {
+  border-top: 4px solid hsl(212, 86%, 64%);
+}
+
+footer {
+  margin-top: 3rem;
+}
+footer p {
+  font-size: 1.5rem;
+}
+footer a:hover {
+  color: hsl(212, 86%, 64%);
+}
+
+@media screen and (max-width: 845px) {
+  header {
+    width: 100%;
+  }
+  header .header__title,
+  header .header__subtitle {
+    font-size: 2.2rem;
+  }
+  header p {
+    font-size: 1.2rem;
+    width: 82%;
+  }
+  .card__container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);  
+    padding: 2rem;
+    gap: 2rem;
+  }
+  .card__left {
+    grid-column: 1 / 4;
+  }
+  .card__center {
+    grid-column: 1 / 4;
+  }
+  .card__rigth {
+    grid-column: 1 / 4;
+  }
+  .card__container {
+    width: 100%;
+  }
+  .card {
+    min-width: 90%;
+    margin: 0 auto;
+  }
+}
+footer {
+  text-align: center;
+}
+
